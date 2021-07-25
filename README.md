@@ -1,4 +1,4 @@
-# LogLife-API
+# LogLife-API - NodeJS
 
 ## Overview
 
