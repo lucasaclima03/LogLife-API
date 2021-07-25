@@ -72,6 +72,9 @@ exports.signIn = (req, res, next) => {
                         token: token
                     })
                 }
+                return res.status(401).send({
+                    message: "Falha na autenticação"
+                })
             })
         })
         .catch(err => {

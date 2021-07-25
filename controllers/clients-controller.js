@@ -47,6 +47,7 @@ exports.getAll = (req, res) => {
         })
 }
 
+
 exports.find = (req, res) => {
     Client.findOne({
         where: {
