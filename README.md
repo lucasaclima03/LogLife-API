@@ -23,7 +23,7 @@ Rotas para serem consumidas:
 
 3 - Cadastre um usúario utilizando o método POST na rota:  
 
-> YOUR-HOST:4040/todos/users/sign-up
+> YOUR-HOST:4040/users/sign-up
 
 passando no corpo com formato raw JSON:  
 ```
