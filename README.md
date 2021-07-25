@@ -19,7 +19,7 @@ Rotas para serem consumidas:
   
 1 - Primeiramente faça o clone deste repositório para a sua máquina  
 
-2 - Rode no terminal o comando `npm install` que instalará automaticamente todas as dependências necessárias para rodar a API  
+2 - Rode no terminal o comando `npm install` que instalará automaticamente todas as dependências necessárias para rodar a API e depois rode o comando `npm start` para iniciar.  
 
 3 - Cadastre um usúario utilizando o método POST na rota:  
 
@@ -45,9 +45,9 @@ Insira os dados criados no passo anterior
 }
 ```
  
-5 - Ao fazer o login, será retornado um HASH, utilize-o para fazer a autenticação das próximas rotas 
+5 - Ao fazer o login, será retornado um Bearer Token, utilize-o para fazer a autenticação das próximas rotas 
 
-6 - Com o HASH adicionado, cadastre um novo cliente utilizando o método POST para a rota:  
+6 - Com o Bearer Token adicionado, cadastre um novo cliente utilizando o método POST para a rota:  
 
 > YOUR-HOST:4040/clients
 
@@ -77,7 +77,18 @@ Envie os dados do cliente com a seguinte estrutura:
 
 > YOUR-HOST:4040/clients  
 
-8 - Para editar/atualizar um cliente cadastrado, utilize a seguinte o método GET na rota:  
+8 - Para listar os dados de um cliente específico, utilize o método GET na rota abaixo, passando o ID no corpo da requisição como no exemplo abaixo:
+> YOUR-HOST:4040/clients/id 
+
+ ```
+ {   
+  "id": "1",  
+      
+}
+```
+
+
+9 - Para editar/atualizar um cliente cadastrado, utilize a seguinte o método PATCH na rota:  
 
 > YOUR-HOST:4040/clients  
 
@@ -102,7 +113,7 @@ Lembre-se de passar o ID do cliente que você estará atualizando, conforme o ex
     "vehicles": " "
 }
 ```
-9 - Para deletar um cliente da base de dados utilize o método DELETE na seguinte rota:  
+10 - Para deletar um cliente da base de dados utilize o método DELETE na seguinte rota:  
 
  > YOUR-HOST:4040/clients
 
@@ -113,3 +124,6 @@ Basta passar o ID do cliente que deseja excluir conforme o exemplo:
   "id": "1"      
 }
 ```
+
+### Links
+[Linkedin:] (https://www.linkedin.com/in/lucasaclima03/)
